@@ -21,9 +21,27 @@
     <ClCompile Include="RiotAPIReader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CurlCaller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CurlFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="RiotAPIReader.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RiotAPIReaderTypes.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CurlWrapper.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CurlCaller.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CurlFactory.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

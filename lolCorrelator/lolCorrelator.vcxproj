@@ -73,8 +73,8 @@
     <LibraryPath>C:\Users\Zeck\Documents\Visual Studio 2015\Projects\lolCorrelator\External Libraries;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>C:\Users\Zeck\Documents\Visual Studio 2015\Projects\lolCorrelator\External Includes;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\Zeck\Documents\Visual Studio 2015\Projects\lolCorrelator\External Libraries;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\Zeck\Documents\Visual Studio 2015\Projects\lolCorrelator\External Includes;C:\Users\Erik\Documents\Visual Studio 2015\Projects\lolcorrelator\External Includes;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Erik\Documents\Visual Studio 2015\Projects\lolcorrelator\External Libraries;C:\Users\Zeck\Documents\Visual Studio 2015\Projects\lolCorrelator\External Libraries;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -121,11 +121,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CurlCaller.cpp" />
+    <ClCompile Include="CurlFactory.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="RiotAPIReader.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CurlCaller.h" />
+    <ClInclude Include="CurlFactory.h" />
+    <ClInclude Include="CurlWrapper.h" />
     <ClInclude Include="RiotAPIReader.h" />
+    <ClInclude Include="RiotAPIReaderTypes.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

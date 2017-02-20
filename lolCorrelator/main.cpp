@@ -3,22 +3,11 @@
 #endif
 
 #include <iostream>
-//#include "C:/Users/Zeck/Documents/Visual Studio 2015/Projects/lolCorrelator/External Libraries/curl/include/curl/curl.h"
-#include "curl/include/curl/curl.h"
-//#include "rapidjson/document.h"
-//#include "rapidjson/writer.h"
-//#include "rapidjson/stringbuffer.h"
-#include "jsonlohmann/json.hpp"
 #include "RiotAPIReader.h"
 
 using json = nlohmann::json;
 
 #pragma once
-
-size_t writeCallback(void *contents, size_t size, size_t nmemb, void *userp) {
-	((std::string*)userp)->append((char*)contents, size * nmemb);
-	return size * nmemb;
-}//
 
 int main() {
 	std::string url = "https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/Zecknaal?api_key=cf493893-d798-47e2-997f-adced88d62b9";
@@ -28,10 +17,12 @@ int main() {
 	curl = curl_easy_init();
 	std::string readBuffer;
 
-	if (curl) {
+	if (1 == 2) {
 		curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
-		curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, writeCallback);
+		//curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, writeCallback);
 		curl_easy_setopt(curl, CURLOPT_WRITEDATA, &readBuffer);
+		//Gotta find a better way to do this so home/work development don't kill each other. Probably non-replicated config file
+		curl_easy_setopt(curl, CURLOPT_PROXY, "http://proxy.cat.com:80");
 
 		res = curl_easy_perform(curl);
 		curl_easy_cleanup(curl);
@@ -41,8 +32,10 @@ int main() {
 			std::cout << element << std::endl;
 		}
 
-		RiotAPIReader apiReader;
+		RiotAPIReader apiReader(SERVER_REGION::NORTH_AMERICA);
 	}
+	RiotAPIReader api(SERVER_REGION::NORTH_AMERICA, "http://proxy.cat.com:80");
+	std::cout << api.callAPI(url.c_str());
 	std::cin.get();
 	return 0;
 }
