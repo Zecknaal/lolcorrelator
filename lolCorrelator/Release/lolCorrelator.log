@@ -1,0 +1,31 @@
+﻿  main.cpp
+C:\Users\Zeck\Documents\Visual Studio 2015\Projects\lolCorrelator\External Includes\jsonlohmann/json.hpp(6672): warning C4003: not enough actual parameters for macro 'max'
+C:\Users\Zeck\Documents\Visual Studio 2015\Projects\lolCorrelator\External Includes\jsonlohmann/json.hpp(6678): warning C4003: not enough actual parameters for macro 'max'
+C:\Users\Zeck\Documents\Visual Studio 2015\Projects\lolCorrelator\External Includes\jsonlohmann/json.hpp(6684): warning C4003: not enough actual parameters for macro 'max'
+C:\Users\Zeck\Documents\Visual Studio 2015\Projects\lolCorrelator\External Includes\jsonlohmann/json.hpp(6690): warning C4003: not enough actual parameters for macro 'max'
+C:\Users\Zeck\Documents\Visual Studio 2015\Projects\lolCorrelator\External Includes\jsonlohmann/json.hpp(6704): warning C4003: not enough actual parameters for macro 'min'
+C:\Users\Zeck\Documents\Visual Studio 2015\Projects\lolCorrelator\External Includes\jsonlohmann/json.hpp(6704): warning C4003: not enough actual parameters for macro 'max'
+C:\Users\Zeck\Documents\Visual Studio 2015\Projects\lolCorrelator\External Includes\jsonlohmann/json.hpp(6710): warning C4003: not enough actual parameters for macro 'min'
+C:\Users\Zeck\Documents\Visual Studio 2015\Projects\lolCorrelator\External Includes\jsonlohmann/json.hpp(6710): warning C4003: not enough actual parameters for macro 'max'
+C:\Users\Zeck\Documents\Visual Studio 2015\Projects\lolCorrelator\External Includes\jsonlohmann/json.hpp(6716): warning C4003: not enough actual parameters for macro 'min'
+C:\Users\Zeck\Documents\Visual Studio 2015\Projects\lolCorrelator\External Includes\jsonlohmann/json.hpp(6716): warning C4003: not enough actual parameters for macro 'max'
+C:\Users\Zeck\Documents\Visual Studio 2015\Projects\lolCorrelator\External Includes\jsonlohmann/json.hpp(6722): warning C4003: not enough actual parameters for macro 'min'
+C:\Users\Zeck\Documents\Visual Studio 2015\Projects\lolCorrelator\External Includes\jsonlohmann/json.hpp(6722): warning C4003: not enough actual parameters for macro 'max'
+C:\Users\Zeck\Documents\Visual Studio 2015\Projects\lolCorrelator\External Includes\jsonlohmann/json.hpp(6739): warning C4003: not enough actual parameters for macro 'max'
+C:\Users\Zeck\Documents\Visual Studio 2015\Projects\lolCorrelator\External Includes\jsonlohmann/json.hpp(6745): warning C4003: not enough actual parameters for macro 'max'
+C:\Users\Zeck\Documents\Visual Studio 2015\Projects\lolCorrelator\External Includes\jsonlohmann/json.hpp(6751): warning C4003: not enough actual parameters for macro 'max'
+C:\Users\Zeck\Documents\Visual Studio 2015\Projects\lolCorrelator\External Includes\jsonlohmann/json.hpp(6757): warning C4003: not enough actual parameters for macro 'max'
+C:\Users\Zeck\Documents\Visual Studio 2015\Projects\lolCorrelator\External Includes\jsonlohmann/json.hpp(6914): warning C4003: not enough actual parameters for macro 'max'
+C:\Users\Zeck\Documents\Visual Studio 2015\Projects\lolCorrelator\External Includes\jsonlohmann/json.hpp(6920): warning C4003: not enough actual parameters for macro 'max'
+C:\Users\Zeck\Documents\Visual Studio 2015\Projects\lolCorrelator\External Includes\jsonlohmann/json.hpp(6926): warning C4003: not enough actual parameters for macro 'max'
+C:\Users\Zeck\Documents\Visual Studio 2015\Projects\lolCorrelator\External Includes\jsonlohmann/json.hpp(6948): warning C4003: not enough actual parameters for macro 'max'
+C:\Users\Zeck\Documents\Visual Studio 2015\Projects\lolCorrelator\External Includes\jsonlohmann/json.hpp(6954): warning C4003: not enough actual parameters for macro 'max'
+C:\Users\Zeck\Documents\Visual Studio 2015\Projects\lolCorrelator\External Includes\jsonlohmann/json.hpp(6960): warning C4003: not enough actual parameters for macro 'max'
+C:\Users\Zeck\Documents\Visual Studio 2015\Projects\lolCorrelator\External Includes\jsonlohmann/json.hpp(7173): warning C4003: not enough actual parameters for macro 'max'
+  Generating code
+  2 of 760 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+    1 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  lolCorrelator.vcxproj -> C:\Users\Zeck\documents\visual studio 2015\Projects\lolCorrelator\Release\lolCorrelator.exe
+  lolCorrelator.vcxproj -> C:\Users\Zeck\documents\visual studio 2015\Projects\lolCorrelator\Release\lolCorrelator.pdb (Full PDB)
