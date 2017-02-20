@@ -18,7 +18,7 @@ using json = nlohmann::json;
 size_t writeCallback(void *contents, size_t size, size_t nmemb, void *userp) {
 	((std::string*)userp)->append((char*)contents, size * nmemb);
 	return size * nmemb;
-}
+}//
 
 int main() {
 	std::string url = "https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/Zecknaal?api_key=cf493893-d798-47e2-997f-adced88d62b9";
