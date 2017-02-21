@@ -100,6 +100,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -123,6 +124,8 @@
   <ItemGroup>
     <ClCompile Include="CurlCaller.cpp" />
     <ClCompile Include="CurlFactory.cpp" />
+    <ClCompile Include="JsonFactory.cpp" />
+    <ClCompile Include="JsonParser.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="RiotAPIReader.cpp" />
   </ItemGroup>
@@ -130,6 +133,9 @@
     <ClInclude Include="CurlCaller.h" />
     <ClInclude Include="CurlFactory.h" />
     <ClInclude Include="CurlWrapper.h" />
+    <ClInclude Include="JsonFactory.h" />
+    <ClInclude Include="JsonParser.h" />
+    <ClInclude Include="JsonWrapper.h" />
     <ClInclude Include="RiotAPIReader.h" />
     <ClInclude Include="RiotAPIReaderTypes.h" />
   </ItemGroup>

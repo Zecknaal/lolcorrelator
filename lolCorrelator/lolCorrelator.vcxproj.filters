@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Curl">
+      <UniqueIdentifier>{cd2cd4fb-3ce1-460e-8dd9-1bdeaf20270c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Json">
+      <UniqueIdentifier>{a2e3b0cd-f86f-4b45-afeb-cc94b2eac5c3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -22,10 +28,16 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CurlCaller.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Curl</Filter>
     </ClCompile>
     <ClCompile Include="CurlFactory.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Curl</Filter>
+    </ClCompile>
+    <ClCompile Include="JsonParser.cpp">
+      <Filter>Source Files\Json</Filter>
+    </ClCompile>
+    <ClCompile Include="JsonFactory.cpp">
+      <Filter>Source Files\Json</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -35,14 +47,23 @@
     <ClInclude Include="RiotAPIReaderTypes.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="CurlWrapper.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="CurlCaller.h">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Curl</Filter>
     </ClInclude>
     <ClInclude Include="CurlFactory.h">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Curl</Filter>
+    </ClInclude>
+    <ClInclude Include="CurlWrapper.h">
+      <Filter>Source Files\Curl</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonWrapper.h">
+      <Filter>Source Files\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonParser.h">
+      <Filter>Source Files\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonFactory.h">
+      <Filter>Source Files\Json</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

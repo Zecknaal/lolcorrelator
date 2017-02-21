@@ -25,6 +25,8 @@ LIABILITY, WHETHER IN AN ACTION OF  CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE  OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
+#undef max
+#undef min
 
 #ifndef NLOHMANN_JSON_HPP
 #define NLOHMANN_JSON_HPP
@@ -57,6 +59,7 @@ SOFTWARE.
 #include <utility> // declval, forward, make_pair, move, pair, swap
 #include <vector> // vector
 
+using namespace std;
 // exclude unsupported compilers
 #if defined(__clang__)
     #if (__clang_major__ * 10000 + __clang_minor__ * 100 + __clang_patchlevel__) < 30400
@@ -8294,7 +8297,7 @@ class basic_json
         {
             if (x == 0)
             {
-                std::strcpy(m_buf.data(), std::signbit(x) ? "-0.0" : "0.0");
+                strcpy_s(m_buf.data(), sizeof(m_buf.data()), std::signbit(x) ? "-0.0" : "0.0");
                 return;
             }
 
@@ -8354,7 +8357,7 @@ class basic_json
 
             if (value_is_int_like)
             {
-                strcat(m_buf.data(), ".0");
+                strcat_s(m_buf.data(), sizeof(m_buf.data()), ".0");
             }
         }
     };

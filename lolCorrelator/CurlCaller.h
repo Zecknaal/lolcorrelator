@@ -12,5 +12,6 @@ class CurlCaller : public CurlWrapper{
 	protected:
 		std::string readBuffer;
 		CURL* curl;
-		size_t writeCallback(void * contents, size_t size, size_t nmemb, void * userp);
+		//Must be static - the callback will fail otherwise
+		static size_t writeCallback(void * contents, size_t size, size_t nmemb, void * userp);
 };

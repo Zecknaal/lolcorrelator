@@ -15,8 +15,6 @@ const char* CurlCaller::sendCurl(const char* url) {
 
 	curl_easy_setopt(curl, CURLOPT_URL, url);
 	curlResult = curl_easy_perform(curl);
-	curl_easy_cleanup(curl);
-
 	return readBuffer.c_str();
 }
 
@@ -25,5 +23,5 @@ void CurlCaller::setupCurl(const char * proxy){
 	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, &CurlCaller::writeCallback);
 	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &readBuffer);
 	if (proxy)
-		curl_easy_setopt(curl, CURLOPT_PROXY, "http://proxy.cat.com:80");
+		curl_easy_setopt(curl, CURLOPT_PROXY, proxy);
 }

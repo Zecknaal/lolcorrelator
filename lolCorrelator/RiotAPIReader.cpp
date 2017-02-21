@@ -1,11 +1,9 @@
 #include "RiotAPIReader.h"
 
-RiotAPIReader::RiotAPIReader(SERVER_REGION region, CurlWrapper* curlWrapper){
+RiotAPIReader::RiotAPIReader(SERVER_REGION region, CurlWrapper* curlWrapper, JsonWrapper* jsonWrapper){
 	apiServerRegion = region;
-	if (curlWrapper != nullptr)
-		curl = curlWrapper;
-	else
-		curl = CurlFactory().createCurl();
+	curl = curlWrapper;
+	json = jsonWrapper;
 }
 
 RiotAPIReader::RiotAPIReader(SERVER_REGION region, const char * proxy){
@@ -14,8 +12,18 @@ RiotAPIReader::RiotAPIReader(SERVER_REGION region, const char * proxy){
 		curl = CurlFactory().createCurl(proxy);
 	else
 		curl = CurlFactory().createCurl();
+
+	json = JsonFactory().createJson(JsonParserType::Lohmann);
 }
 
-const char * RiotAPIReader::callAPI(const char * url){
+std::string RiotAPIReader::callAPI(const char * url){
+	json->parseJson(curl->sendCurl(url));
+	//return nullptr;
+	//for (auto& a : json->parseJson(curl->sendCurl(url)))
+		//std::cout << a.second << std::endl;
+	//std::string str = json["test"];
+	std::cout << json->read("zecknaal") << std::endl;
+	//std::string str = json[*t];
+	//std::cout << str << std::endl;
 	return curl->sendCurl(url);
 }
