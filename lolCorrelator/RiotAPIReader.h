@@ -4,13 +4,14 @@
 #include "CurlWrapper.h"
 #include "CurlFactory.h"
 #include "JsonFactory.h"
+#include "RiotAPIReaderWrapper.h"
 
-class RiotAPIReader {
+class RiotAPIReader : public RiotAPIReaderWrapper {
 	public:
 		RiotAPIReader(SERVER_REGION region, CurlWrapper* curlWrapper, JsonWrapper* jsonWrapper);
 		RiotAPIReader(SERVER_REGION region, const char*  proxy = nullptr);
 
-		std::string callAPI(const char* url);
+		virtual std::string callAPI(const char* url) override;
 	protected:
 		CurlWrapper* curl;
 		JsonWrapper* json;

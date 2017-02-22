@@ -19,12 +19,21 @@
     <Filter Include="Source Files\Json">
       <UniqueIdentifier>{a2e3b0cd-f86f-4b45-afeb-cc94b2eac5c3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\APIReader">
+      <UniqueIdentifier>{c779aaab-4f71-4c5c-87d0-68fbe8569736}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SummonerAPI">
+      <UniqueIdentifier>{149d3992-fc81-43bc-8646-5a67c4558a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\URLBuilder">
+      <UniqueIdentifier>{0f112486-936c-48c7-8003-0780a22dae92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\URLBuilder\URL Builders">
+      <UniqueIdentifier>{d89450f0-148e-4798-a8fe-c2c98128ec1e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="RiotAPIReader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CurlCaller.cpp">
@@ -39,14 +48,17 @@
     <ClCompile Include="JsonFactory.cpp">
       <Filter>Source Files\Json</Filter>
     </ClCompile>
+    <ClCompile Include="RiotAPIReader.cpp">
+      <Filter>Source Files\APIReader</Filter>
+    </ClCompile>
+    <ClCompile Include="SummonerAPI.cpp">
+      <Filter>Source Files\SummonerAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="URLBuilderFactory.cpp">
+      <Filter>Source Files\URLBuilder</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="RiotAPIReader.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="RiotAPIReaderTypes.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="CurlCaller.h">
       <Filter>Source Files\Curl</Filter>
     </ClInclude>
@@ -64,6 +76,69 @@
     </ClInclude>
     <ClInclude Include="JsonFactory.h">
       <Filter>Source Files\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="RiotAPIReader.h">
+      <Filter>Source Files\APIReader</Filter>
+    </ClInclude>
+    <ClInclude Include="RiotAPIReaderTypes.h">
+      <Filter>Source Files\APIReader</Filter>
+    </ClInclude>
+    <ClInclude Include="SummonerAPI.h">
+      <Filter>Source Files\SummonerAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="RiotAPIReaderWrapper.h">
+      <Filter>Source Files\APIReader</Filter>
+    </ClInclude>
+    <ClInclude Include="URLBuilderWrapper.h">
+      <Filter>Source Files\URLBuilder</Filter>
+    </ClInclude>
+    <ClInclude Include="URLBuilderFactory.h">
+      <Filter>Source Files\URLBuilder</Filter>
+    </ClInclude>
+    <ClInclude Include="URLBuilderBase.h">
+      <Filter>Source Files\URLBuilder</Filter>
+    </ClInclude>
+    <ClInclude Include="MatchURLBuilder.h">
+      <Filter>Source Files\URLBuilder\URL Builders</Filter>
+    </ClInclude>
+    <ClInclude Include="SummonerURLBuilder.h">
+      <Filter>Source Files\URLBuilder\URL Builders</Filter>
+    </ClInclude>
+    <ClInclude Include="ChampionURLBuilder.h">
+      <Filter>Source Files\URLBuilder\URL Builders</Filter>
+    </ClInclude>
+    <ClInclude Include="ChampionMasteryURLBuilder.h">
+      <Filter>Source Files\URLBuilder\URL Builders</Filter>
+    </ClInclude>
+    <ClInclude Include="CurrentGameURLBuilder.h">
+      <Filter>Source Files\URLBuilder\URL Builders</Filter>
+    </ClInclude>
+    <ClInclude Include="FeaturedGamesURLBuilder.h">
+      <Filter>Source Files\URLBuilder\URL Builders</Filter>
+    </ClInclude>
+    <ClInclude Include="GameURLBuilder.h">
+      <Filter>Source Files\URLBuilder\URL Builders</Filter>
+    </ClInclude>
+    <ClInclude Include="LeagueURLBuilder.h">
+      <Filter>Source Files\URLBuilder\URL Builders</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticDataURLBuilder.h">
+      <Filter>Source Files\URLBuilder\URL Builders</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusURLBuilder.h">
+      <Filter>Source Files\URLBuilder\URL Builders</Filter>
+    </ClInclude>
+    <ClInclude Include="StatsURLBuilder.h">
+      <Filter>Source Files\URLBuilder\URL Builders</Filter>
+    </ClInclude>
+    <ClInclude Include="MatchListURLBuilder.h">
+      <Filter>Source Files\URLBuilder\URL Builders</Filter>
+    </ClInclude>
+    <ClInclude Include="URLConstantBuilder.h">
+      <Filter>Source Files\URLBuilder\URL Builders</Filter>
+    </ClInclude>
+    <ClInclude Include="URLConstantBuilderWrapper.h">
+      <Filter>Source Files\URLBuilder\URL Builders</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
