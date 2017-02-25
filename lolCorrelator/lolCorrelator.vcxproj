@@ -127,6 +127,7 @@
     <ClCompile Include="JsonFactory.cpp" />
     <ClCompile Include="JsonParser.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="RiotAPIManager.cpp" />
     <ClCompile Include="RiotAPIReader.cpp" />
     <ClCompile Include="SummonerAPI.cpp" />
     <ClCompile Include="URLBuilderFactory.cpp" />
@@ -146,6 +147,7 @@
     <ClInclude Include="LeagueURLBuilder.h" />
     <ClInclude Include="MatchListURLBuilder.h" />
     <ClInclude Include="MatchURLBuilder.h" />
+    <ClInclude Include="RiotAPIManager.h" />
     <ClInclude Include="RiotAPIReader.h" />
     <ClInclude Include="RiotAPIReaderTypes.h" />
     <ClInclude Include="RiotAPIReaderWrapper.h" />

@@ -1,8 +1,11 @@
-﻿  SummonerAPI.cpp
+﻿  RiotAPIManager.cpp
+  SummonerAPI.cpp
+  URLBuilderFactory.cpp
+  main.cpp
   Generating code
-  0 of 829 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+  4 of 1162 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    104 functions had inline decision re-evaluated but remain unchanged
+    14 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   lolCorrelator.vcxproj -> C:\Users\Erik\Documents\Visual Studio 2015\Projects\lolcorrelator\Release\lolCorrelator.exe
   lolCorrelator.vcxproj -> C:\Users\Erik\Documents\Visual Studio 2015\Projects\lolcorrelator\Release\lolCorrelator.pdb (Full PDB)

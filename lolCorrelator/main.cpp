@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include "RiotAPIReader.h"
+#include "RiotAPIManager.h"
 
 #pragma once
 
@@ -12,7 +13,8 @@ int main() {
 
 	RiotAPIReader api(SERVER_REGION::NORTH_AMERICA, "http://proxy.cat.com:80");
 	api.callAPI(url.c_str());
-	//std::cout << api.callAPI(url.c_str());
+	RiotAPIManager apiapi = RiotAPIManager();
+	apiapi.readSummonerData();
 	std::cin.get();
 	return 0;
 }

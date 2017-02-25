@@ -22,14 +22,17 @@
     <Filter Include="Source Files\APIReader">
       <UniqueIdentifier>{c779aaab-4f71-4c5c-87d0-68fbe8569736}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\SummonerAPI">
-      <UniqueIdentifier>{149d3992-fc81-43bc-8646-5a67c4558a31}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\URLBuilder">
       <UniqueIdentifier>{0f112486-936c-48c7-8003-0780a22dae92}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\URLBuilder\URL Builders">
       <UniqueIdentifier>{d89450f0-148e-4798-a8fe-c2c98128ec1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\API Manager">
+      <UniqueIdentifier>{9eed8c56-b33a-4f30-927d-efbfea357b0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\API Manager\SummonerAPI">
+      <UniqueIdentifier>{149d3992-fc81-43bc-8646-5a67c4558a31}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -52,10 +55,13 @@
       <Filter>Source Files\APIReader</Filter>
     </ClCompile>
     <ClCompile Include="SummonerAPI.cpp">
-      <Filter>Source Files\SummonerAPI</Filter>
+      <Filter>Source Files\API Manager\SummonerAPI</Filter>
     </ClCompile>
     <ClCompile Include="URLBuilderFactory.cpp">
       <Filter>Source Files\URLBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="RiotAPIManager.cpp">
+      <Filter>Source Files\API Manager</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -84,7 +90,7 @@
       <Filter>Source Files\APIReader</Filter>
     </ClInclude>
     <ClInclude Include="SummonerAPI.h">
-      <Filter>Source Files\SummonerAPI</Filter>
+      <Filter>Source Files\API Manager\SummonerAPI</Filter>
     </ClInclude>
     <ClInclude Include="RiotAPIReaderWrapper.h">
       <Filter>Source Files\APIReader</Filter>
@@ -139,6 +145,9 @@
     </ClInclude>
     <ClInclude Include="URLConstantBuilderWrapper.h">
       <Filter>Source Files\URLBuilder\URL Builders</Filter>
+    </ClInclude>
+    <ClInclude Include="RiotAPIManager.h">
+      <Filter>Source Files\API Manager</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

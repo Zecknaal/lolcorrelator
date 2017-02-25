@@ -8,6 +8,6 @@
 class SummonerAPI{
 
 	public:
-		SummonerAPI(URLBuilderWrapper* builder);
-		std::string getSummonerName();
+		SummonerAPI(URLBuilderWrapper* builder = nullptr);
+		std::string getSummonerName(APIParameters params);
 };

@@ -4,12 +4,32 @@
 
 class SummonerURLBuilder : public URLBuilderBase {
 	public:
-		SummonerURLBuilder(APIParameters params, URLConstantBuilderWrapper* builder = nullptr) : URLBuilderBase(params, builder) {
-		}
+		SummonerURLBuilder(APIParameters params, URLConstantBuilderWrapper* builder = nullptr) : URLBuilderBase(params, builder) {}
+
 		virtual std::string getURL() override {
-			std::string url, region, type;
-			url = constantBuilder->getPrefix() + constantBuilder->mapRegionToPrefix(apiParameters.region) + "/api/lol/na/v1.4/summoner/by-name/zecknaal?api_key=cf493893-d798-47e2-997f-adced88d62b9";
+			std::string url;
+			url = constantBuilder->getPrefix() +
+				constantBuilder->mapRegionToPrefix(apiParameters.region) +
+				"/api/lol/" +
+				constantBuilder->mapRegionToPrefixShort(apiParameters.region) +
+				"/v1.4/summoner" +
+				//apiParameters.parameters["Type"][1] +
+				getCoreURLByType(apiParameters.parameters["Type"][0]) +
+				//"zecknaal" +
+				constantBuilder->convertParamsToCommaSeparatedString(apiParameters.parameters["summonerNames"]);
+				constantBuilder->getKeyPrefix() +
+				apiParameters.key;
 			return url;
-			//return std::string("https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/zecknaal?api_key=cf493893-d798-47e2-997f-adced88d62b9");
+		}
+
+		std::string getCoreURLByType(std::string typeParam) {
+			if (typeParam == "ByName")
+				return "/by-name/";
+			else if (typeParam == "ByID")
+				return "";
+			else if (typeParam == "GetName")
+				return "";
+			else
+				return "";
 		}
 };
