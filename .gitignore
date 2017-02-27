@@ -1,0 +1,10 @@
+lolCorrelator.VC.db
+.vs/lolCorrelator/v14/.suo
+.vs/lolCorrelator/v14/.suo
+*.obj
+*.tlog
+*.lastbuildstate
+*.pdb
+*.iobj
+*.ipdb
+*.exe
