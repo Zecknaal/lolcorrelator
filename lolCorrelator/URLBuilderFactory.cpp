@@ -40,5 +40,8 @@ URLBuilderWrapper * URLBuilderFactory::createURLBuilder(APIParameters parameters
 	else if (parameters.api == APIType::Summoner) {
 		urlBuilder = new SummonerURLBuilder(parameters);
 	}
+	else{
+		urlBuilder = new SummonerURLBuilder(parameters);
+	}
 	return urlBuilder;
 }

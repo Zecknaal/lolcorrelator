@@ -69,21 +69,26 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Users\Zeck\Documents\Visual Studio 2015\Projects\lolCorrelator\External Libraries</IncludePath>
-    <LibraryPath>C:\Users\Zeck\Documents\Visual Studio 2015\Projects\lolCorrelator\External Libraries;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\Erik\Documents\Visual Studio 2015\Projects\lolcorrelator\External Includes;$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Users\Zeck\Documents\Visual Studio 2015\Projects\lolCorrelator\External Includes</IncludePath>
+    <LibraryPath>C:\Users\Erik\Documents\Visual Studio 2015\Projects\lolcorrelator\External Libraries;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <IncludePath>C:\Users\Zeck\Documents\Visual Studio 2015\Projects\lolCorrelator\External Includes;C:\Users\Erik\Documents\Visual Studio 2015\Projects\lolcorrelator\External Includes;$(IncludePath)</IncludePath>
     <LibraryPath>C:\Users\Erik\Documents\Visual Studio 2015\Projects\lolcorrelator\External Libraries;C:\Users\Zeck\Documents\Visual Studio 2015\Projects\lolCorrelator\External Libraries;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\Users\Erik\Documents\Visual Studio 2015\Projects\lolcorrelator\External Includes;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Erik\Documents\Visual Studio 2015\Projects\lolcorrelator\External Libraries;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);_SCL_SECURE_NO_WARNINGS</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>libcurl_a.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -91,7 +96,11 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);_SCL_SECURE_NO_WARNINGS</PreprocessorDefinitions>
     </ClCompile>
+    <Link>
+      <AdditionalDependencies>libcurl.lib;libcurl_a.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
