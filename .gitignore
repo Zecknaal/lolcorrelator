@@ -1,0 +1,11 @@
+lolCorrelator.VC.db
+.vs
+Debug
+lolCorrelator/Debug
+lolCorrelator/Release
+*.tlog
+*.lastbuildstate
+*.pdb
+*.iobj
+*.ipdb
+*.exe
