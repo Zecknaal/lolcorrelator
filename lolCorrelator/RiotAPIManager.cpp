@@ -9,13 +9,12 @@ void RiotAPIManager::readSummonerData(){
 	std::vector<std::string> vec;
 	vec.push_back("ByName");
 	std::vector<std::string> vec2;
-	vec.push_back("Zecknaal");
+	vec2.push_back("Zecknaal");
 	params.api = APIType::Summoner;
 	params.region = SERVER_REGION::NORTH_AMERICA;
 	params.key = readKey();
 	params.parameters["Type"] = vec;
 	params.parameters["summonerNames"] = vec2;
-
 	std::cout << summonerAPI->getSummonerName(params);
 }
 

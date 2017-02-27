@@ -16,8 +16,9 @@ RiotAPIReader::RiotAPIReader(SERVER_REGION region, const char * proxy){
 	json = JsonFactory().createJson(JsonParserType::Lohmann);
 }
 
-std::string RiotAPIReader::callAPI(const char * url){
-	json->parseJson(curl->sendCurl(url));
-	std::cout << json->read("zecknaal") << std::endl;
-	return curl->sendCurl(url);
+std::string RiotAPIReader::callAPI(std::string url){
+	json->parseJson(curl->sendCurl(url.c_str()));
+	//std::cout << json->read("zecknaal") << std::endl;
+	//return curl->sendCurl(url.c_str());
+	return json->dump();
 }

@@ -11,7 +11,7 @@ class RiotAPIReader : public RiotAPIReaderWrapper {
 		RiotAPIReader(SERVER_REGION region, CurlWrapper* curlWrapper, JsonWrapper* jsonWrapper);
 		RiotAPIReader(SERVER_REGION region, const char*  proxy = nullptr);
 
-		virtual std::string callAPI(const char* url) override;
+		virtual std::string callAPI(std::string url) override;
 	protected:
 		CurlWrapper* curl;
 		JsonWrapper* json;

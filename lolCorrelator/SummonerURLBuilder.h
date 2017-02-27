@@ -13,10 +13,8 @@ class SummonerURLBuilder : public URLBuilderBase {
 				"/api/lol/" +
 				constantBuilder->mapRegionToPrefixShort(apiParameters.region) +
 				"/v1.4/summoner" +
-				//apiParameters.parameters["Type"][1] +
 				getCoreURLByType(apiParameters.parameters["Type"][0]) +
-				//"zecknaal" +
-				constantBuilder->convertParamsToCommaSeparatedString(apiParameters.parameters["summonerNames"]);
+				constantBuilder->convertParamsToCommaSeparatedString(apiParameters.parameters["summonerNames"]) +
 				constantBuilder->getKeyPrefix() +
 				apiParameters.key;
 			return url;

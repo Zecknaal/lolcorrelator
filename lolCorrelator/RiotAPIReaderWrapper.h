@@ -4,5 +4,5 @@
 
 class RiotAPIReaderWrapper {
 	public:
-		virtual std::string callAPI(const char* url) = 0;
+		virtual std::string callAPI(std::string url) = 0;
 };

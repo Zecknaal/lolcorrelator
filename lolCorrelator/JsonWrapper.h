@@ -8,6 +8,7 @@ class JsonWrapper{
 		//virtual derived operator=(const char* json) = 0;
 		virtual std::string operator[](const std::string &element) = 0;
 		virtual std::string read(std::string element) = 0;
+		virtual std::string dump() = 0;
 	protected:
 		std::string jsonRaw;
 };

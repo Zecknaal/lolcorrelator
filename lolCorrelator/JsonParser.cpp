@@ -15,6 +15,10 @@ std::string JsonParser::read(std::string element){
 	return jsonData[element].dump();
 }
 
+std::string JsonParser::dump(){
+	return jsonData.dump();
+}
+
 //JsonParser JsonParser::operator=(const char * json){
 //	jsonData = json::parse(json);
 //	return *this;

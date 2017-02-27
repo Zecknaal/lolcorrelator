@@ -1,6 +1,7 @@
 #pragma once
 
 #include "URLConstantBuilderWrapper.h"
+#include <iostream>
 class URLConstantBuilder : public URLConstantBuilderWrapper {
 	public:
 		std::string mapRegionToPrefix(SERVER_REGION region) override{
@@ -64,7 +65,6 @@ class URLConstantBuilder : public URLConstantBuilderWrapper {
 				else
 					commaSeparatedString += ',' + param;
 			}
-
 			return commaSeparatedString;
 		}
 
