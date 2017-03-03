@@ -15,7 +15,7 @@ void RiotAPIManager::readSummonerData(){
 	params.key = readKey();
 	params.parameters["Type"] = vec;
 	params.parameters["summonerNames"] = vec2;
-	std::cout << summonerAPI->getSummonerName(params);
+	//std::cout << summonerAPI->getSummonerName(params);
 }
 
 std::string RiotAPIManager::readKey(){

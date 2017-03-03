@@ -19,6 +19,14 @@ std::string JsonParser::dump(){
 	return jsonData.dump();
 }
 
+std::map<std::string, std::string> JsonParser::extractValuesByElement(std::string element, std::vector<std::string> key){
+	std::map<string, string> data;
+	for (auto& entry : key) {
+		data[key.data()->c_str()] = jsonData[key.data()->c_str()].dump();
+	}
+	return data;
+}
+
 //JsonParser JsonParser::operator=(const char * json){
 //	jsonData = json::parse(json);
 //	return *this;

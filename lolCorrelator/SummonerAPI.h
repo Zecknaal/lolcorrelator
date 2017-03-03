@@ -3,11 +3,12 @@
 
 #include "RiotAPIReaderWrapper.h"
 #include "SummonerURLBuilder.h"
-#include <string>
+#include "JsonFactory.h"
+#include <map>
 
 class SummonerAPI{
 
 	public:
 		SummonerAPI(URLBuilderWrapper* builder = nullptr);
-		std::string getSummonerName(APIParameters params);
+		std::map<std::string, std::string> getSummonerName(APIParameters params);
 };
