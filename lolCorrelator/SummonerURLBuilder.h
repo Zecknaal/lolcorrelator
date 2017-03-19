@@ -15,6 +15,7 @@ class SummonerURLBuilder : public URLBuilderBase {
 				"/v1.4/summoner" +
 				getCoreURLByType(apiParameters.parameters["Type"][0]) +
 				constantBuilder->convertParamsToCommaSeparatedString(apiParameters.parameters["summonerNames"]) +
+				"?" +
 				constantBuilder->getKeyPrefix() +
 				apiParameters.key;
 			return url;

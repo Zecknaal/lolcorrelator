@@ -34,6 +34,12 @@
     <Filter Include="Source Files\API Manager\SummonerAPI">
       <UniqueIdentifier>{149d3992-fc81-43bc-8646-5a67c4558a31}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\API Manager\MatchListAPI">
+      <UniqueIdentifier>{7fd8cf0c-830f-4c05-8f28-fd61ba0fc33d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\API Manager\MatchAPI">
+      <UniqueIdentifier>{1983b7f5-91e8-44a3-a67a-0a6bf0a38e64}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -62,6 +68,12 @@
     </ClCompile>
     <ClCompile Include="RiotAPIManager.cpp">
       <Filter>Source Files\API Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="MatchListAPI.cpp">
+      <Filter>Source Files\API Manager\MatchListAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="MatchAPI.cpp">
+      <Filter>Source Files\API Manager\MatchAPI</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -148,6 +160,21 @@
     </ClInclude>
     <ClInclude Include="RiotAPIManager.h">
       <Filter>Source Files\API Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="SummonerAPITypes.h">
+      <Filter>Source Files\API Manager\SummonerAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="MatchListAPI.h">
+      <Filter>Source Files\API Manager\MatchListAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="MatchListTypes.h">
+      <Filter>Source Files\API Manager\MatchListAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="MatchAPI.h">
+      <Filter>Source Files\API Manager\MatchAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="MatchAPITypes.h">
+      <Filter>Source Files\API Manager\MatchAPI</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

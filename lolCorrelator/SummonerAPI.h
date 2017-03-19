@@ -4,11 +4,19 @@
 #include "RiotAPIReaderWrapper.h"
 #include "SummonerURLBuilder.h"
 #include "JsonFactory.h"
+#include "SummonerAPITypes.h"
 #include <map>
+#include <vector>
 
 class SummonerAPI{
 
 	public:
-		SummonerAPI(URLBuilderWrapper* builder = nullptr);
-		std::map<std::string, std::string> getSummonerName(APIParameters params);
+		SummonerAPI(RiotAPIReaderWrapper* reader = nullptr);
+		std::map<std::string, SummonerData> getSummonerName(APIParameters params, URLBuilderWrapper* urlBuilder = nullptr);
+		APIParameters setupByNameParams();
+	protected:
+		SummonerData parseJsonIntoSummonerData(JsonWrapper* json = nullptr);
+
+		RiotAPIReaderWrapper* apiReader;
 };
+

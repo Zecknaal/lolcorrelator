@@ -69,6 +69,6 @@ class URLConstantBuilder : public URLConstantBuilderWrapper {
 		}
 
 		std::string getKeyPrefix() override{
-			return "?api_key=";
+			return "api_key=";
 		}
 };

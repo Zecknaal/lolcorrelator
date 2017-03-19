@@ -10,6 +10,7 @@ class CurlCaller : public CurlWrapper{
 		virtual const char* sendCurl(const char* url) override;
 		virtual void setupCurl(const char* proxy = nullptr) override;
 	protected:
+		std::string httpProxy;
 		std::string readBuffer;
 		CURL* curl;
 		//Must be static - the callback will fail otherwise

@@ -9,8 +9,20 @@
 #pragma once
 
 int main() {
-	RiotAPIManager apiapi = RiotAPIManager();
-	apiapi.readSummonerData();
+	RiotAPIManager api = RiotAPIManager();
+
+	std::vector<std::string> vec2;
+	vec2.push_back("azhi%20dahaki");
+	vec2.push_back("zecknaal");
+	api.readSummonerData(vec2);
+	for (auto& summonerData : api.readSummonerData(vec2)) {
+		std::cout << summonerData.second.id << std::endl;
+		auto matchData = api.readMatchListData(summonerData.second.id)["result"].matches;
+		for (auto& match : matchData) {
+			auto data = api.readMatchData(match.matchId)["result"].season;
+			std::cout << data << std::endl;
+		}
+	}
 	std::cin.get();
 	return 0;
 }

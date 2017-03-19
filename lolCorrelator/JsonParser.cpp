@@ -4,7 +4,7 @@ std::string JsonParser::parseJson(const char * json){
 	std::map<std::string, std::string[]>* jsonMap = new std::map<std::string, std::string[]>;
 	jsonData = json::parse(json);
 	
-	return std::string();
+	return jsonData.dump();
 }
 
 std::string JsonParser::operator[](const std::string &element){
@@ -17,6 +17,14 @@ std::string JsonParser::read(std::string element){
 
 std::string JsonParser::dump(){
 	return jsonData.dump();
+}
+
+std::vector<std::string> JsonParser::dumpByElement(std::string element){
+	std::vector<std::string> elements;
+	for (auto& element : jsonData[element]) {
+		elements.push_back(element.dump());
+	}
+	return elements;
 }
 
 std::map<std::string, std::string> JsonParser::extractValuesByElement(std::string element, std::vector<std::string> key){
