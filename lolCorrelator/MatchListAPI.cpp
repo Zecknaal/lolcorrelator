@@ -4,7 +4,7 @@
 
 MatchListAPI::MatchListAPI(RiotAPIReaderWrapper * reader){
 	if (reader == nullptr)
-		apiReader = new RiotAPIReader(SERVER_REGION::NORTH_AMERICA, "http://proxy.cat.com:80");
+		apiReader = new RiotAPIReader(SERVER_REGION::NORTH_AMERICA);// , "http://proxy.cat.com:80");
 	else
 		apiReader = reader;
 }

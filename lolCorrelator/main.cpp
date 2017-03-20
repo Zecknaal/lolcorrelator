@@ -12,7 +12,7 @@ int main() {
 	RiotAPIManager api = RiotAPIManager();
 
 	std::vector<std::string> vec2;
-	vec2.push_back("azhi%20dahaki");
+	//vec2.push_back("azhi%20dahaki");
 	vec2.push_back("zecknaal");
 	api.readSummonerData(vec2);
 	for (auto& summonerData : api.readSummonerData(vec2)) {

@@ -22,10 +22,11 @@ const char* CurlCaller::sendCurl(const char* url) {
 }
 
 void CurlCaller::setupCurl(const char * proxy){
-	httpProxy = proxy;
 	curl = curl_easy_init();
 	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, &CurlCaller::writeCallback);
 	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &readBuffer);
-	if (proxy)
+	if (proxy != nullptr) {
+		httpProxy = proxy;
 		curl_easy_setopt(curl, CURLOPT_PROXY, proxy);
+	}
 }

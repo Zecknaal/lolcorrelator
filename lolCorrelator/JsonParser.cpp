@@ -1,10 +1,10 @@
 #include "JsonParser.h"
 
-std::string JsonParser::parseJson(const char * json){
+void JsonParser::parseJson(const char * json){
 	std::map<std::string, std::string[]>* jsonMap = new std::map<std::string, std::string[]>;
 	jsonData = json::parse(json);
 	
-	return jsonData.dump();
+	//return jsonData.dump();
 }
 
 std::string JsonParser::operator[](const std::string &element){

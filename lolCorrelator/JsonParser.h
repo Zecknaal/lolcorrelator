@@ -7,7 +7,7 @@ using json = nlohmann::json;
 
 class JsonParser : public JsonWrapper{
 	public:
-		virtual std::string parseJson(const char* json) override;
+		virtual void parseJson(const char* json) override;
 		virtual std::string operator[](const std::string &element) override;
 		virtual std::string read(std::string element) override;
 		virtual std::string dump() override;
