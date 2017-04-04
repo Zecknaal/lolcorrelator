@@ -5,6 +5,7 @@
 #include "RiotAPIReader.h"
 #include "URLBuilderWrapper.h"
 #include "URLBuilderFactory.h"
+#include <string>
 
 class MatchListAPI {
 	public:
@@ -15,5 +16,5 @@ class MatchListAPI {
 		RiotAPIReaderWrapper* apiReader;
 
 		MatchListData parseJsonIntoMatchListData(JsonWrapper* json = nullptr);
-		std::vector<MatchListSingleData> parseMatchData(std::vector<string> data, JsonWrapper* json = nullptr);
+		std::vector<MatchListSingleData> parseMatchData(std::vector<std::string> data, JsonWrapper* json = nullptr);
 };

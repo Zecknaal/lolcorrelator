@@ -7,12 +7,13 @@
 #include <iostream>
 #include <vector>
 #include <map>
+#include <string>
 
 class RiotAPIManager {
 	public:
 		RiotAPIManager();
 		
-		std::map<std::string, SummonerData> readSummonerData(std::vector<string> summonerNames);
+		std::map<std::string, SummonerData> readSummonerData(std::vector<std::string> summonerNames);
 		std::map<std::string, MatchListData> readMatchListData(int summonerID);
 		std::map<std::string, MatchData> readMatchData(std::string matchID);
 	protected:

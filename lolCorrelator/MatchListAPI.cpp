@@ -4,7 +4,7 @@
 
 MatchListAPI::MatchListAPI(RiotAPIReaderWrapper * reader){
 	if (reader == nullptr)
-		apiReader = new RiotAPIReader(SERVER_REGION::NORTH_AMERICA);// , "http://proxy.cat.com:80");
+		apiReader = new RiotAPIReader(SERVER_REGION::NORTH_AMERICA , "http://proxy.cat.com:80");
 	else
 		apiReader = reader;
 }
@@ -40,7 +40,7 @@ MatchListData MatchListAPI::parseJsonIntoMatchListData(JsonWrapper * json){
 	return matchListData;
 }
 
-std::vector<MatchListSingleData> MatchListAPI::parseMatchData(std::vector<string> data, JsonWrapper * json){
+std::vector<MatchListSingleData> MatchListAPI::parseMatchData(std::vector<std::string> data, JsonWrapper * json){
 	MatchListSingleData matchData;
 	std::vector<MatchListSingleData> matches;
 	if (json == nullptr)

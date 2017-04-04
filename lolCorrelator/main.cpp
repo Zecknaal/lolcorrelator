@@ -19,6 +19,7 @@ int main() {
 		std::cout << summonerData.second.id << std::endl;
 		auto matchData = api.readMatchListData(summonerData.second.id)["result"].matches;
 		for (auto& match : matchData) {
+			std::cout << "sending" << std::endl;
 			auto data = api.readMatchData(match.matchId)["result"].season;
 			std::cout << data << std::endl;
 		}

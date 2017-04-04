@@ -28,7 +28,7 @@ std::vector<std::string> JsonParser::dumpByElement(std::string element){
 }
 
 std::map<std::string, std::string> JsonParser::extractValuesByElement(std::string element, std::vector<std::string> key){
-	std::map<string, string> data;
+	std::map<std::string, std::string> data;
 	for (auto& entry : key) {
 		data[key.data()->c_str()] = jsonData[key.data()->c_str()].dump();
 	}

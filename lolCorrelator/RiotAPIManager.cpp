@@ -6,7 +6,7 @@ RiotAPIManager::RiotAPIManager(){
 	matchAPI = new MatchAPI();
 }
 
-std::map<std::string, SummonerData> RiotAPIManager::readSummonerData(std::vector<string> summonerNames){
+std::map<std::string, SummonerData> RiotAPIManager::readSummonerData(std::vector<std::string> summonerNames){
 	auto params = summonerAPI->setupByNameParams();
 	params.region = SERVER_REGION::NORTH_AMERICA;
 	params.key = readKey();
@@ -21,7 +21,7 @@ std::map<std::string, MatchListData> RiotAPIManager::readMatchListData(int summo
 	params.key = readKey();
 
 	std::vector<std::string> summonerIDs;
-	summonerIDs.push_back(to_string(summonerID));
+	summonerIDs.push_back(std::to_string(summonerID));
 	params.parameters["summonerIDs"] = summonerIDs;
 
 	return matchListAPI->getSummonerMatchList(params);
